@@ -4,6 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .game--screen {
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+      }
+      canvas {
+        border: 1px dotted black;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="game--screen">
+      <canvas width="640" height="360"></canvas>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
 </html>
